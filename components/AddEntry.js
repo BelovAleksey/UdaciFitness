@@ -4,7 +4,7 @@ import { getMetricMetaInfo, timeToString, getDailyReminderValue } from '../utils
 import UdaciSlider from './UdaciSlider';
 import UdaciSteppers from './UdaciSteppers';
 import TextButton from './TextButton';
-import DateHeader from './dateHeader';
+import DateHeader from './DateHeader';
 import { Ionicons } from '@expo/vector-icons';
 import { submitEntry, removeEntry } from '../utils/api';
 import { connect } from 'react-redux';
