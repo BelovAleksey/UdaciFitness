@@ -13,6 +13,7 @@ import {
   createStackNavigator,
 } from 'react-navigation';
 import { purple, white } from './utils/colors';
+import { setLocalNotification } from './utils/helpers';
 import { FontAwesome, Ionicons } from '@expo/vector-icons';
 import { Constants } from 'expo';
 
@@ -94,6 +95,9 @@ const MainNavigator = createStackNavigator({
 const AppContainer = createAppContainer(MainNavigator);
 
 export default class App extends React.Component {
+  componentDidMount() {
+    setLocalNotification();
+  }
   render() {
     return (
       <Provider store={createStore(reducer)}>
